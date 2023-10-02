@@ -8,7 +8,7 @@ public class Scenario {
 
 	public static void main(String[] args) {
 		Gaulois aste = new Gaulois("Astérix", 8);
-		Romain minus = new Romain("Minus", 25);
+		Romain minus = new Romain("Minus", 6);
 		Gaulois obelix = new Gaulois("Obélix", 25);
 		Druide pano = new Druide("Panoramix", 5, 10);
 		pano.parler("Je vais aller préparer une petite potion...");
