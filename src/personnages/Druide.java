@@ -14,7 +14,7 @@ public class Druide {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
 		this.effetPotionMax = effetPotionMax;
-		parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " à " + effetPotionMax + ".");
+		parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " Ã  " + effetPotionMax + ".");
 	}
 
 	public String getNom() {
@@ -26,20 +26,20 @@ public class Druide {
 	    forcePotion = rnd.nextInt(effetPotionMax+1-effetPotionMin);
 	    forcePotion += effetPotionMin;
 	    if (forcePotion > 7) {
-			parler("J'ai préparé une super potion de force : " + forcePotion +" ");
+			parler("J'ai prÃ©parÃ© une super potion de force : " + forcePotion +" ");
 		} else {
-			parler("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force : " + forcePotion +" ");
+			parler("Je n'ai pas trouvÃ© tous les ingrÃ©dients, ma potion est seulement de force : " + forcePotion +" ");
 		}
 	}
 	
 	public void booster(Gaulois gaulois) {
-		if ("Obélix".equals(gaulois.getNom())) {
-			parler("Non, Obélix !... Tu n’auras pas de potion magique ");
+		if ("ObÃ©lix".equals(gaulois.getNom())) {
+			parler("Non, ObÃ©lix !... Tu nÃ©auras pas de potion magique ");
 		}
 	}
 	
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "<< " + texte + " >>");
 	}
 	
 	private String prendreParole() {
@@ -49,7 +49,7 @@ public class Druide {
 	public static void main(String[] args) {
 		Druide pano = new Druide("Panoramix",5,10);
 		pano.preparerPotion();
-		Gaulois obelix = new Gaulois("Obélix",25);
+		Gaulois obelix = new Gaulois("ObÃ©lix",25);
 		pano.booster(obelix);
 	}
 }
