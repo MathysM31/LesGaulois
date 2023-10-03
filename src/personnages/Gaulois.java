@@ -25,13 +25,13 @@ public class Gaulois {
 	}
 	
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la m√¢choire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la m‚choire de " + romain.getNom());
 		romain.recevoirCoup((force/3)*effetPotion);
 	}
 	
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
-		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois d√©cupl√©e");
+		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois dÈcuplÈe");
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
-		Gaulois aste = new Gaulois("Ast√©rix",8);
+		Gaulois aste = new Gaulois("AstÈrix",8);
 //		System.out.println(aste.getNom());
 		System.out.println(aste);
 		System.out.println(aste.prendreParole());

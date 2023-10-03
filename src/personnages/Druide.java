@@ -26,15 +26,15 @@ public class Druide {
 	    forcePotion = rnd.nextInt(effetPotionMax+1-effetPotionMin);
 	    forcePotion += effetPotionMin;
 	    if (forcePotion > 7) {
-			parler("J'ai prÃ©parÃ© une super potion de force : " + forcePotion +" ");
+			parler("J'ai préparé une super potion de force : " + forcePotion +" ");
 		} else {
-			parler("Je n'ai pas trouvÃ© tous les ingrÃ©dients, ma potion est seulement de force : " + forcePotion +" ");
+			parler("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force : " + forcePotion +" ");
 		}
 	}
 	
 	public void booster(Gaulois gaulois) {
-		if ("ObÃ©lix".equals(gaulois.getNom())) {
-			parler("Non, ObÃ©lix !... Tu nÃ©auras pas de potion magique ");
+		if ("Obélix".equals(gaulois.getNom())) {
+			parler("Non, Obélix !... Tu néauras pas de potion magique ");
 		}
 	}
 	
@@ -49,7 +49,7 @@ public class Druide {
 	public static void main(String[] args) {
 		Druide pano = new Druide("Panoramix",5,10);
 		pano.preparerPotion();
-		Gaulois obelix = new Gaulois("ObÃ©lix",25);
+		Gaulois obelix = new Gaulois("Obélix",25);
 		pano.booster(obelix);
 	}
 }
